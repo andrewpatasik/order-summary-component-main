@@ -3,57 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./public/images/favicon-32x32.png"
-    />
+      href="./public/images/favicon-32x32.png"/>
     <link rel="stylesheet" href="./public/css/style.css" />
     <title>Frontend Mentor | Order summary card</title>
   </head>
   <body>
     <main
-    id="root"
-    class="relative flex items-center justify-center w-screen h-screen bg-paleblue px-6 py-16 font-display"
-    >
-    <img src="./public/images/pattern-background-desktop.svg" class="absolute top-0 w-full object-fit hidden desktop:block"/>
+      id="root"
+      class="relative flex items-center justify-center w-screen h-screen bg-paleblue px-6 py-16 font-display">
+      <img
+        src="./public/images/pattern-background-desktop.svg"
+        alt="wave pattern background"
+        class="absolute top-0 w-full object-fit hidden desktop:block"/>
       <div
         id="order__summary__card"
-        class="flex flex-col bg-white max-w-sm rounded-[20px] drop-shadow-xl overflow-hidden"
-      >
-        <img src="./public/images/illustration-hero.svg" />
+        class="flex flex-col bg-white w-full h-full max-w-md max-h-[41rem] rounded-[20px] drop-shadow-2xl overflow-hidden">
+        <img
+          src="./public/images/illustration-hero.svg"
+          alt="illustration hero"/>
         <section
-          id="order__summary__detail"
-          class="flex flex-col h-full text-center px-6 py-8"
-        >
-          <h1 class="text-xl font-black">Order Summary</h1>
-          <p class="text-desaturatedblue py-6">
+          id="order__summary__content"
+          class="flex flex-col h-full text-center desktop:justify-between px-4 py-6 desktop:px-10 desktop:py-10">
+          <h1 class="text-xl desktop:text-2xl font-black">Order Summary</h1>
+          <p class="text-desaturatedblue py-5 px-4">
             You can now listen to million of songs, audiobooks, and podcasts on
             any device anywhere you like!
           </p>
           <article
             id="order__summary__subscription"
-            class="flex bg-verypaleblue p-4 rounded-[16px]"
-          >
-            <img src="./public/images/icon-music.svg" />
-            <div class="ml-4">
-              <h2 class="font-black">Annual Plan</h2>
+            class="flex bg-verypaleblue px-4 py-4 desktop:px-5 desktop:py-6 rounded-[16px]">
+            <img src="./public/images/icon-music.svg" alt="icon music" />
+            <div id="order__summary__subscription__plan" class="ml-4">
+              <h2 class="font-bold">Annual Plan</h2>
               <p class="text-desaturatedblue">$59.99/year</p>
             </div>
-            <button class="text-brightblue font-bold underline ml-auto">
+            <button
+              class="text-brightblue text-sm font-black underline ml-auto">
               Change
             </button>
           </article>
           <div id="order__summary__submit" class="flex flex-col mt-auto gap-2">
             <button
-              class="bg-brightblue text-white font-medium py-3 rounded-lg drop-shadow-xl"
-            >
+              class="bg-brightblue text-white font-bold py-3 rounded-lg drop-shadow-xl">
               Proceed to Payment
             </button>
-            <button class="font-bold text-desaturatedblue mt-4">
+            <button class="font-bold text-sm text-desaturatedblue mt-4">
               Cancel Order
             </button>
           </div>
