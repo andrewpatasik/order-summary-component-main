@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./public/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <title>Frontend Mentor | Order summary card</title>
+  </head>
+  <body>
+    <main
+    id="root"
+    class="relative flex items-center justify-center w-screen h-screen bg-paleblue px-6 py-16 font-display"
+    >
+    <img src="./public/images/pattern-background-desktop.svg" class="absolute top-0 w-full object-fit hidden desktop:block"/>
+      <div
+        id="order__summary__card"
+        class="flex flex-col bg-white max-w-sm rounded-[20px] drop-shadow-xl overflow-hidden"
+      >
+        <img src="./public/images/illustration-hero.svg" />
+        <section
+          id="order__summary__detail"
+          class="flex flex-col h-full text-center px-6 py-8"
+        >
+          <h1 class="text-xl font-black">Order Summary</h1>
+          <p class="text-desaturatedblue py-6">
+            You can now listen to million of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <article
+            id="order__summary__subscription"
+            class="flex bg-verypaleblue p-4 rounded-[16px]"
+          >
+            <img src="./public/images/icon-music.svg" />
+            <div class="ml-4">
+              <h2 class="font-black">Annual Plan</h2>
+              <p class="text-desaturatedblue">$59.99/year</p>
+            </div>
+            <button class="text-brightblue font-bold underline ml-auto">
+              Change
+            </button>
+          </article>
+          <div id="order__summary__submit" class="flex flex-col mt-auto gap-2">
+            <button
+              class="bg-brightblue text-white font-medium py-3 rounded-lg drop-shadow-xl"
+            >
+              Proceed to Payment
+            </button>
+            <button class="font-bold text-desaturatedblue mt-4">
+              Cancel Order
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
