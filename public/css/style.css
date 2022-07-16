@@ -641,8 +641,8 @@ video {
   height: 100%;
 }
 
-.max-h-\[41rem\] {
-  max-height: 41rem;
+.max-h-\[42rem\] {
+  max-height: 42rem;
 }
 
 .w-screen {
@@ -770,6 +770,15 @@ video {
   font-weight: 700;
 }
 
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.text-darkblue {
+  --tw-text-opacity: 1;
+  color: rgb(31 47 86 / var(--tw-text-opacity));
+}
+
 .text-desaturatedblue {
   --tw-text-opacity: 1;
   color: rgb(114 128 167 / var(--tw-text-opacity));
@@ -809,9 +818,9 @@ video {
     justify-content: space-between;
   }
 
-  .desktop\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+  .desktop\:px-11 {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
   }
 
   .desktop\:py-10 {
@@ -824,9 +833,9 @@ video {
     padding-right: 1.25rem;
   }
 
-  .desktop\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+  .desktop\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
   }
 
   .desktop\:text-2xl {
